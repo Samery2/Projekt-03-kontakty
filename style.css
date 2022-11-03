@@ -8,3 +8,66 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+img {
+	border-radius: 50%;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+.tym {
+	display: flex;
+	justify-content: center;
+
+}
+
+.osoba {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	border: 0.5px solid rgba(128, 128, 128, 0.4);
+	margin: 10px;
+	padding: 25px;
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+}
+
+
+
+
+@media (max-width: 960px) {
+	.tym { 
+		flex-wrap: wrap;
+	}
+
+	.osoba {
+		flex-direction: row;
+		flex-basis: calc(50% - 20px);
+		width: 400px;
+	}
+
+	.popis {
+		text-align: left;
+		padding-left: 10px;
+	}
+}
+
+@media (max-width:540px) {
+	.tym { 
+		flex-wrap: none;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.osoba {
+		flex-direction: column;
+		width: 250px;
+	}
+	.popis {
+		text-align: center;
+	}
+}
